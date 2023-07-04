@@ -12,7 +12,7 @@ public class MainController {
 	public MainController() {
 		super();
 
-		log.info("Main Controller activated...");
+		log.info("Main Controller activatedssss");
 	}
 
 	@GetMapping("/main")
