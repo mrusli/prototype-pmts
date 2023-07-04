@@ -1,0 +1,17 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.88rem;
+    padding: 0px;
+    
+	width: 100%;
+	height: 100%;	
+}
+.z-window, .z-window-content {
+	padding: 0px;
+	
+	/* IMPORTANT!!! for image to display */
+	width: 100%;
+	height: 100%;	
+}

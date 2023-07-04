@@ -1,0 +1,118 @@
+<div xmlns:n="native" id="perhitunganPanel" apply="${perhitunganController}">
+<n:main>
+	<n:h1>Perhitungan Jumlah Orang Masuk / Keluar PLBN</n:h1>
+	<div style="padding-top: 10px;">
+		<div style="display: flex; gap: 10px; align-items: center;">
+			<n:h2>PLBN:</n:h2>
+			<textbox id="plbnNameTextbox" value="ENTIKONG" width="180px"></textbox>
+			<n:h2>Lokasi:</n:h2>
+			<textbox id="lokasiTextbox" value="KALIMANTAN BARAT" width="180px"></textbox>
+		</div>	
+	</div>
+	<div style="padding-top: 10px;">
+		<div style="display: flex; gap: 10px; align-items: center;">
+			<n:h2>MASUK : </n:h2>
+			<textbox id="masukTextbox" value="12" width="60px"></textbox>
+			<n:h2>ORANG - </n:h2>
+			<n:h2 style="color: red;">HARI INI - Senin, 05/06/2023 - 11:03 WIB</n:h2>
+		</div>
+	</div>	
+	<div style="padding-top: 10px;">
+		<listbox id="masukListbox" height="300px" mold="paging" pageSize="2">
+			<listhead>
+				<listheader label="Photo" width="95px" ></listheader>
+				<listheader label="Nama" width="120px"></listheader>
+				<listheader label="Dari" width="220px"></listheader>
+				<listheader label="NIK" width="120px"></listheader>
+				<listheader label="Tempat/Tgl-Lahir" width="220px"></listheader>
+				<listheader label="Alamat" width="180px"></listheader>
+			</listhead>
+			<listitem style="vertical-align: top;">
+				<listcell> <image src="/zkau/web/img/smplphoto1.png" width="68px" height="87px"></image> </listcell>
+				<listcell>YUSRI DODI</listcell>
+				<listcell>KALIMANTAN BARAT, KAB.SANGGAU, KAPUAS</listcell>
+				<listcell>1301061511830004</listcell>
+				<listcell>PADANG, 15/11/1983</listcell>
+				<listcell>JL MUSTIKA 2 NO 12 BLOK DA.10/12</listcell>
+			</listitem>
+			<listitem style="vertical-align: top;">
+				<listcell> <image src="/zkau/web/img/smplphoto1.png" width="68px" height="87px"></image> </listcell>
+				<listcell>BAGAS SEPTIAN</listcell>
+				<listcell>KALIMANTAN BARAT, KAB.LANDAK, NGABANG</listcell>
+				<listcell>3216051311950006</listcell>
+				<listcell>JAKARTA, 13/11/1995</listcell>
+				<listcell>JL MANDALA 1 NO 19 BLOK AA.2/19</listcell>
+			</listitem>		
+			<listitem style="vertical-align: top;">
+				<listcell> <image src="/zkau/web/img/smplphoto1.png" width="68px" height="87px"></image> </listcell>
+				<listcell>YUSRI DODI</listcell>
+				<listcell>KALIMANTAN BARAT, KAB.SANGGAU, KAPUAS</listcell>
+				<listcell>1301061511830004</listcell>
+				<listcell>PADANG, 15/11/1983</listcell>
+				<listcell>JL MUSTIKA 2 NO 12 BLOK DA.10/12</listcell>
+			</listitem>
+			<listitem style="vertical-align: top;">
+				<listcell> <image src="/zkau/web/img/smplphoto1.png" width="68px" height="87px"></image> </listcell>
+				<listcell>BAGAS SEPTIAN</listcell>
+				<listcell>KALIMANTAN BARAT, KAB.LANDAK, NGABANG</listcell>
+				<listcell>3216051311950006</listcell>
+				<listcell>JAKARTA, 13/11/1995</listcell>
+				<listcell>JL MANDALA 1 NO 19 BLOK AA.2/19</listcell>
+			</listitem>					
+		</listbox>
+	</div>
+	<div style="padding-top: 10px;">
+		<div style="display: flex; gap: 10px; align-items: center;">
+			<n:h2>KELUAR : </n:h2>
+			<textbox id="keluarTextbox" value="18" width="60px"></textbox>
+			<n:h2>ORANG - </n:h2>
+			<n:h2 style="color: red;">HARI INI - Senin, 05/06/2023 - 11:03 WIB</n:h2>
+		</div>
+	</div>	
+	<div style="padding-top: 10px;">
+		<listbox id="keluarListbox" height="300px" mold="paging" pageSize="2">
+			<listhead>
+				<listheader label="Photo" width="95px" ></listheader>
+				<listheader label="Nama" width="120px"></listheader>
+				<listheader label="Dari" width="220px"></listheader>
+				<listheader label="NIK" width="120px"></listheader>
+				<listheader label="Tempat/Tgl-Lahir" width="220px"></listheader>
+				<listheader label="Alamat" width="180px"></listheader>
+			</listhead>
+			<listitem style="vertical-align: top;">
+				<listcell> <image src="/zkau/web/img/smplphoto1.png" width="68px" height="87px"></image> </listcell>
+				<listcell>IRMA ZAKIAH</listcell>
+				<listcell>KALIMANTAN BARAT, KAB.SEKADAU, SEKADAU HILIR</listcell>
+				<listcell>3216057108790002</listcell>
+				<listcell>BEKASI, 31/08/1979</listcell>
+				<listcell>JL UTAMA 1 NO 11 BLOK DA.11/11</listcell>
+			</listitem>
+			<listitem style="vertical-align: top;">
+				<listcell> <image src="/zkau/web/img/smplphoto1.png" width="68px" height="87px"></image> </listcell>
+				<listcell>TOFIK SUGINARTONO</listcell>
+				<listcell>KALIMANTAN BARAT, KAB.SINTANG, SINTANG</listcell>
+				<listcell>3216050804710005</listcell>
+				<listcell>TEGAL, 08/04/1971</listcell>
+				<listcell>JL SARANA 3 NO 9 BLOK DA.11/9</listcell>
+			</listitem>			
+			<listitem style="vertical-align: top;">
+				<listcell> <image src="/zkau/web/img/smplphoto1.png" width="68px" height="87px"></image> </listcell>
+				<listcell>IRMA ZAKIAH</listcell>
+				<listcell>KALIMANTAN BARAT, KAB.SEKADAU, SEKADAU HILIR</listcell>
+				<listcell>3216057108790002</listcell>
+				<listcell>BEKASI, 31/08/1979</listcell>
+				<listcell>JL UTAMA 1 NO 11 BLOK DA.11/11</listcell>
+			</listitem>
+			<listitem style="vertical-align: top;">
+				<listcell> <image src="/zkau/web/img/smplphoto1.png" width="68px" height="87px"></image> </listcell>
+				<listcell>TOFIK SUGINARTONO</listcell>
+				<listcell>KALIMANTAN BARAT, KAB.SINTANG, SINTANG</listcell>
+				<listcell>3216050804710005</listcell>
+				<listcell>TEGAL, 08/04/1971</listcell>
+				<listcell>JL SARANA 3 NO 9 BLOK DA.11/9</listcell>
+			</listitem>
+		</listbox>
+
+	</div>	
+</n:main>
+</div>

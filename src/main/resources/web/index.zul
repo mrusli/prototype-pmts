@@ -1,0 +1,8 @@
+<?page title="Index-Hello" contentType="text/html;charset=UTF-8"?>
+<?link rel="stylesheet" type="text/css" href="/zkau/web/css/style-index.css"?>
+<zk>
+<window xmlns:n="native" border="none">
+<n:h1>PUSDALOPS TNI</n:h1>
+<n:h2>Pemantauan Operasi Pos Pamtas dan Kodal</n:h2>
+</window>
+</zk>

@@ -1,0 +1,100 @@
+<div xmlns:n="native" id="pendaftaranPanel" apply="${pendaftaranController}">
+<n:main class="pendaftaran">
+	<n:h1>Pendaftaran Data Masuk / Keluar PLBN</n:h1>
+	<div style="padding-top: 10px;">
+		<div style="display: flex; gap: 10px; align-items: center;">
+			<n:h2>PLBN:</n:h2>
+			<textbox id="plbnNameTextbox" value="ENTIKONG" width="180px"></textbox>
+			<n:h2>Lokasi:</n:h2>
+			<textbox id="lokasiTextbox" value="KALIMANTAN BARAT" width="180px"></textbox>
+		</div>	
+	</div>
+	<div class="threeColumns">
+		<div class="imgScan">
+			<div style="display: flex; gap: 10px; align-items: center;">
+				<n:h2>PENDAFTARAN DATA MASUK </n:h2>
+				<button id="scanImage" label="Scan"></button>
+				<button id="discardImage" label="Discard"></button>
+			</div>
+			<div style="padding-top:10px;">
+				<image id="mainImage" width="600px" height="413px"></image>
+			</div>			
+		</div>
+		<div class="identInfoCol01">
+			<div>
+				<n:h3>NIK:</n:h3>
+				<textbox id="nikTextbox" value="3175070101909999"></textbox>
+			</div>
+			<div>
+				<n:h3>PROVINSI:</n:h3>
+				<textbox id="provinsiTextbox" value="DKI JAKARTA"></textbox>				
+			</div>
+			<div>
+				<n:h3>KOTA:</n:h3>
+				<textbox id="kotaTextbox" value="JAKARTA TIMUR"></textbox>				
+			</div>			
+			<div>
+				<n:h3>Main Photo:</n:h3>
+				<image id="mainPhoto" width="138px" height="174px"></image>
+			</div>
+			<div>
+				<n:h3>Nama:</n:h3>
+				<textbox id="namaTextbox" value="BILLY BUMBLEBEE SIFULAN"></textbox>
+			</div>
+			<div>
+				<n:h3>Tempat/Tgl Lahir:</n:h3>
+				<textbox id="tglLahirTextbox" value="SURABAYA, 01-01-1990"></textbox>			
+			</div>
+			<div>
+				<n:h3>Jenis Kelamin:</n:h3>
+				<textbox id="kelaminTextbox" value="LAKI-LAKI"></textbox>			
+			</div>
+			<div>
+				<n:h3>Gol.Darah:</n:h3>
+				<textbox id="darahTextbox" value="AB"></textbox>			
+			</div>
+			<div>
+				<n:h3>Alamat:</n:h3>
+				<textbox id="alamatTextbox" value="JL DIMANA NO 100"></textbox>
+			</div>
+			<div>
+				<n:h3>RT/RW:</n:h3>
+				<textbox id="rtrwTextbox" value="001/001"></textbox>
+			</div>
+			<div>
+				<n:h3>Kel/Desa:</n:h3>
+				<textbox id="keldesaTextbox" value="ANTAH BERANTAH"></textbox>
+			</div>
+			<div>
+				<n:h3>Kecamata:</n:h3>
+				<textbox id="kecamatanTextbox" value="DUREN SAWIT"></textbox>
+			</div>
+		</div>
+		<div class="identInfoCol02">	
+			<div>
+				<n:h3>Agama:</n:h3>
+				<textbox id="agamaTextbox" value="ISLAM"></textbox>
+			</div>
+			<div>
+				<n:h3>Status Perkawinan:</n:h3>
+				<textbox id="statusTextbox" value="KAWIN"></textbox>
+			</div>
+			<div>
+				<n:h3>Pekerjaan:</n:h3>
+				<textbox id="pekerjaanTextbox" value="KARYAWAN SWASTA"></textbox>
+			</div>
+			<div>
+				<n:h3>Kewarganegaraan:</n:h3>
+				<textbox id="wargaTextbox" value="WNI"></textbox>
+			</div>
+			<div>
+				<n:h3>Berlaku Hingga:</n:h3>
+				<textbox id="berlakuTextbox" value="SEUMUR HIDUP"></textbox>
+			</div>
+			<div style="padding-top:10px;">
+				<button id="saveButton" label="Simpan" iconSclass="z-icon-floppy-o"></button>			
+			</div>
+		</div>
+	</div>
+</n:main>
+</div>

@@ -1,0 +1,78 @@
+<?page title="Main" contentType="text/html;charset=UTF-8"?>
+<?variable-resolver class="org.zkoss.zkplus.spring.DelegatingVariableResolver"?>
+<?link rel="stylesheet" type="text/css" href="/zkau/web/css/style-main.css"?>
+<?link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"?>
+<zk>
+<window xmlns:n="native" id="mainWindow" border="none" sclass="mainWindow" apply="${mainWindowController}">
+	<div class="container">
+		<n:aside>
+			<div class="top">
+				<div class="logo">
+					<n:img src="/zkau/web/img/logo1.png" alt=""></n:img>
+					<n:h2>PUSDALOPS <n:span class="danger">TNI</n:span></n:h2>
+				</div>
+				<div class="close" id="close-btn">
+                    <n:span class="material-icons-sharp">close</n:span>
+                </div>	
+			</div>
+			<!-- ========================start: sidebar======================== -->
+			<div class="sidebar">
+                <n:a href="#" class="smenu" onClick="dashboard01MenuClick();">
+                    <n:span class="material-icons-sharp">grid_view</n:span>
+                    <n:h3>Dashboard-01</n:h3>
+                </n:a>
+                <n:a href="#" class="smenu" onClick="dashboard02MenuClick();">
+                    <n:span class="material-icons-sharp">grid_view</n:span>
+                    <n:h3>Dashboard-02</n:h3>
+                </n:a>
+                <n:a href="#" class="smenu" onClick="dashboard03MenuClick();">
+                    <n:span class="material-icons-sharp">grid_view</n:span>
+                    <n:h3>Dashboard-03</n:h3>
+                </n:a>                
+                <n:a href="#" class="smenu" onClick="pendaftaranMenuClick();">
+                    <n:span class="material-icons-sharp">person</n:span>
+                    <n:h3>Pendaftaran</n:h3>
+                </n:a>
+                <n:a href="#" class="smenu" onClick="perhitunganMenuClick();">
+                    <n:span class="material-icons-sharp">receipt_long</n:span>
+                    <n:h3>Perhitungan</n:h3>
+                </n:a>
+                <n:a href="#" class="smenu" onClick="daftarHitamPutihClick();">
+                	<n:span class="material-icons-sharp">inventory</n:span>
+                    <n:h3>Daftar Hitam/Putih</n:h3>
+                </n:a>
+                <n:a href="#" class="smenu" onClick="pesanMenuClick();">
+                    <n:span class="material-icons-sharp">mail_outline</n:span>
+                    <n:h3>Pesan</n:h3>
+                    <n:span class="message-count">0</n:span>
+                </n:a>
+                <n:a href="#" class="smenu" onClick="pelaporanMenuClick();">
+                    <n:span class="material-icons-sharp">report</n:span>
+                    <n:h3>Pelaporan</n:h3>
+                </n:a>
+                <n:a href="#" class="smenu" onClick="kejadianMenonjolMenuClick();">
+                    <n:span class="material-icons-sharp">event</n:span>
+                    <n:h3>Kejadian Menonjol</n:h3>
+                </n:a>                
+                <n:a href="#" class="smenu" id="adminSettingsMenu" onClick="settingsMenuClick();">
+                    <n:span class="material-icons-sharp">settings</n:span>
+                    <n:h3>Settings</n:h3>
+                </n:a>               
+                <n:a href="#" class="smenu">
+                    <n:span class="material-icons-sharp">add</n:span>
+                    <n:h3 id="addMenuLabel">Pendaftaran Baru</n:h3>
+                </n:a>
+                <n:a href="/logout" class="smenu" onClick="logoutMenuClick();">
+                    <n:span class="material-icons-sharp">logout</n:span>
+                    <n:h3>Logout</n:h3>
+                </n:a>                                  			
+			</div>
+		</n:aside>
+		<!-- ========================start: main======================== -->
+		<include  id="mainInclude" hflex="1" vflex="1" style="overflow: auto;"></include>
+		<!-- ========================start: user-profile======================== -->
+		<include id="profileInclude" hflex="1" vflex="1" style="overflow: auto;"></include>				
+	</div>
+</window>
+<script defer="true" type="text/javascript" src="/zkau/web/js/main.js"></script>
+</zk>

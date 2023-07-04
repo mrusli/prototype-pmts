@@ -1,0 +1,87 @@
+<div xmlns:n="native" id="dashboardPanel" apply="${dashboard02Controller}">
+<n:main class="dashboard">
+	<n:h1>DASHBOARD PLBN ENTIKONG</n:h1>
+	<div class="insights">
+		<div class="sales">
+               <n:span class="material-icons-sharp">analytics</n:span>
+               <div class="middle">
+                   <div class="left">
+                       <n:h3>Total MASUK</n:h3>
+                       <n:h1>25</n:h1>
+                   </div>
+                   <div class="progress">
+                       <n:svg>
+                           <n:circle cx='38' cy='38' r='36'></n:circle>
+                       </n:svg>
+                       <div class="number">
+                           <n:p>81%</n:p>
+                       </div>
+                   </div>
+               </div>
+               <n:small class="text-muted">24 Jam Terakhir</n:small>
+		</div>
+		<div class="expenses">
+		    <n:span class="material-icons-sharp">bar_chart</n:span>
+		    <div class="middle">
+		        <div class="left">
+		            <n:h3>Total KELUAR</n:h3>
+		            <n:h1>14</n:h1>
+		        </div>
+		        <div class="progress">
+		            <n:svg>
+		                <n:circle cx='38' cy='38' r='36'></n:circle>
+		            </n:svg>
+		            <div class="number">
+		                <n:p>62%</n:p>
+		            </div>
+		        </div>
+		    </div>
+		    <n:small class="text-muted">24 Jam Terakhir</n:small>
+		</div>	
+		<div class="income">
+		    <n:span class="material-icons-sharp">stacked_line_chart</n:span>
+		    <div class="middle">
+		        <div class="left">
+		            <n:h3>Total Pendaftaran</n:h3>
+		            <n:h1>108</n:h1>
+		        </div>
+		        <div class="progress">
+		            <n:svg>
+		                <n:circle cx='38' cy='38' r='36'></n:circle>
+		            </n:svg>
+		            <div class="number">
+		                <n:p>44%</n:p>
+		            </div>
+		        </div>
+		    </div>
+		    <n:small class="text-muted">30 Hari Terakhir</n:small>
+		</div>			
+		<div class="monitoring">
+		    <n:span class="material-icons-sharp">videocam</n:span>
+		    <div class="middle">
+		        <div class="left">
+		            <n:h3>Total Alarm</n:h3>
+		            <n:h1>6</n:h1>
+		        </div>
+		        <div class="progress">
+		            <n:svg>
+		                <n:circle cx='38' cy='38' r='36'></n:circle>
+		            </n:svg>
+		            <div class="number">
+		                <n:p>44%</n:p>
+		            </div>
+		        </div>
+		    </div>
+		    <n:small class="text-muted">30 Hari Terakhir</n:small>
+		</div>			
+	</div>
+	<div class="cctv">
+		<div class="cctvMasuk">
+			<n:h2>CCTV Footage Orang MASUK PLBN</n:h2>
+		</div>
+		<div class="cctvKeluar">
+			<n:h2>CCTV Footage Orang KELUAR PLBN</n:h2>
+		</div>
+	</div>
+</n:main>
+</div>

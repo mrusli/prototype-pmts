@@ -1,0 +1,152 @@
+<div xmlns:n="native" id="kejadianMenonjolPanel" apply="${kejadianMenonjolController}">
+<n:main class="kejadianMenonjol">
+	<n:h1>Kejadian Menonjol PLBN</n:h1>
+	<div style="padding-top: 10px;">
+		<div style="display: flex; gap: 10px; align-items: center;">
+			<n:h2>PLBN:</n:h2>
+			<textbox id="plbnNameTextbox" value="ENTIKONG" width="180px"></textbox>
+			<n:h2>Lokasi:</n:h2>
+			<textbox id="lokasiTextbox" value="KALIMANTAN BARAT" width="180px"></textbox>
+		</div>	
+	</div>
+	<div class="twoColumns">
+		<div class="formKejadian">
+			<div style="padding-top: 10px; display: flex; gap: 10px; align-items: center;">
+				<div style="display: flex; gap: 10px; align-items: center;">
+					<n:h3>ID:</n:h3>
+					<textbox width="180px"></textbox>
+				</div>
+			</div>
+			<div style="padding-top: 10px; display: flex; gap: 10px; align-items: center;">
+				<div style="display: flex; gap: 10px; align-items: center;">
+					<n:h3>TW.Pembuatan:</n:h3>
+					<textbox width="180px"></textbox>
+				</div>
+				<div style="display: flex; gap: 10px; align-items: center;">
+					<n:h3>TW.Kejadian:</n:h3>
+					<textbox width="180px"></textbox>
+				</div>		
+			</div>
+			<div style="padding-top: 10px; display: flex; gap: 10px; align-items: center;">
+				<div style="display: flex; gap: 10px; align-items: center;">
+					<n:h3>Kotamaops:</n:h3>
+					<textbox width="180px"></textbox>
+				</div>
+				<div style="display: flex; gap: 10px; align-items: center;">
+					<n:h3>Propinsi:</n:h3>
+					<textbox width="180px"></textbox>
+				</div>	
+			</div>
+			<div style="padding-top: 10px; display: flex; gap: 10px; align-items: center;">
+				<div style="display: flex; gap: 10px; align-items: center;">
+					<n:h3>Koord GPS:</n:h3>
+					<textbox width="180px"></textbox>
+				</div>
+				<div style="display: flex; gap: 10px; align-items: center;">
+					<n:h3>Koord Peta:</n:h3>
+					<textbox width="180px"></textbox>
+				</div>
+			</div>	
+			<div style="padding-top: 10px; display: flex; gap: 10px; align-items: center;">
+				<div style="display: flex; gap: 10px; align-items: center;">
+					<n:h3>Bujur / Lintang:</n:h3>
+					<textbox width="180px"></textbox>
+				</div>
+			</div>	
+			<div style="padding-top: 10px; display: flex; gap: 10px; align-items: center;">
+				<div style="display: flex; gap: 10px; align-items: center;">
+					<n:h3>Kab / Kotamadya:</n:h3>
+					<textbox width="180px"></textbox>
+				</div>
+				<div style="display: flex; gap: 10px; align-items: center;">
+					<n:h3>Kecamatan:</n:h3>
+					<textbox width="180px"></textbox>
+				</div>
+			</div>	
+			<div style="padding-top: 10px; display: flex; gap: 10px; align-items: center;">
+				<div style="display: flex; gap: 10px; align-items: center;">
+					<n:h3>Kelurahan:</n:h3>
+					<textbox width="180px"></textbox>
+				</div>
+			</div>	
+			<div style="padding-top: 10px; display: flex; gap: 10px; align-items: center;">
+				<div style="display: flex; gap: 10px; align-items: center;">
+					<n:h3>Kampung:</n:h3>
+					<textbox width="180px"></textbox>
+				</div>
+				<div style="display: flex; gap: 10px; align-items: center;">
+					<n:h3>Jalan:</n:h3>
+					<textbox width="180px"></textbox>
+				</div>
+			</div>	
+			<div style="padding-top: 10px;">
+				<n:h3>Kronologis:</n:h3>
+				<textbox rows="14" width="580px" style="resize: none;"></textbox>		
+			</div>	
+		</div>
+		<div class="listKejadian">
+			<listbox id="kejadianListbox" height="600px" mold="paging" pageSize="12">
+				<listhead>
+					<listheader label="ID" width="125px"/>
+					<listheader label="TW Kejadian" width="105px"/>
+					<listheader label="TW Pembuatan" width="105px"/>					
+					<listheader label="Kotamops" width="120px"/>
+					<listheader label="Propinsi" width="120px"/>
+					<listheader label="Jenis" width="100px"/>
+					<listheader label="Motif" width="120px"/>
+					<listheader label="Kerugian" width="120px"/>
+				</listhead>
+				<listitem>
+					<listcell>ZZZYYY000111</listcell>
+				</listitem>
+				<listitem>
+					<listcell>ZZZYYY003221</listcell>
+				</listitem>
+				<listitem>
+					<listcell>ZZZYYY003241</listcell>
+				</listitem>
+				<listitem>
+					<listcell>ZZZYYY003245</listcell>
+				</listitem>
+				<listitem>
+					<listcell>ZZZYYY003246</listcell>
+				</listitem>
+				<listitem>
+					<listcell>ZZZYYY003248</listcell>
+				</listitem>
+				<listitem>
+					<listcell>ZZZYYY003249</listcell>
+				</listitem>
+				<listitem>
+					<listcell>ZZZYYY003321</listcell>
+				</listitem>
+				<listitem>
+					<listcell>ZZZYYY003325</listcell>
+				</listitem>
+				<listitem>
+					<listcell>ZZZYYY003327</listcell>
+				</listitem>
+				<listitem>
+					<listcell>ZZZYYY003332</listcell>
+				</listitem>
+				<listitem>
+					<listcell>ZZZYYY003337</listcell>
+				</listitem>				
+				<listitem>
+					<listcell>ZZZYYY000111</listcell>
+				</listitem>
+				<listitem>
+					<listcell>ZZZYYY000111</listcell>
+				</listitem>
+				<listitem>
+					<listcell>ZZZYYY000111</listcell>
+				</listitem>
+				<listitem>
+					<listcell>ZZZYYY000111</listcell>
+				</listitem>				
+
+			</listbox>			
+		</div>
+	</div>
+</n:main>
+</div>

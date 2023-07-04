@@ -1,0 +1,102 @@
+<div class="right" xmlns:n="native" id="provileMainPanel" apply="${profileMainControl}">
+	<n:h1>Profile</n:h1>
+    <div class="top">
+        <div class="theme-toggler">
+            <n:span class="material-icons-sharp active">light_mode</n:span>
+            <n:span class="material-icons-sharp">dark_mode</n:span>
+        </div>
+        <n:a href="#" onClick="userProfileClick();">
+	        <div class="profile">
+	            <div class="info">
+	                <n:p>Selamat Pagi, <n:b id="userLabel">Darius</n:b></n:p>
+	                <n:small id="userRoleLabel" class="text-muted">User</n:small>
+	            </div>
+	            <div class="profile-photo">
+	                <n:img src="/zkau/web/img/profile-2.png"></n:img>
+	            </div>
+	        </div>        
+        </n:a>        
+	</div>
+	<!-- END OF TOP -->
+	<div class="recent-updates">
+		<n:h2>Recent Updates</n:h2>
+         <div class="updates">
+             <div class="update">
+                 <div class="profile-photo">
+                     <n:img src="/zkau/web/img/profile-3.png"></n:img>
+                 </div>
+                 <div class="message">
+                     <n:p><n:b>KODAM XII</n:b> Diamankan oleh Serma Koramil. Seorang warga Kp. Ciburahol Sdr. Yudi ditemukan memakai kaos merah dengan logo Palu Arit.</n:p>
+                     <n:small class="text-muted">2 Menit Lalu</n:small>
+                 </div>
+             </div>
+             <div class="update">
+                 <div class="profile-photo">
+                     <n:img src="/zkau/web/img/profile-4.png"></n:img>
+                 </div>
+                 <div class="message">
+                     <n:p><n:b>KODAM XIV</n:b> Terjadi bencana alam banjir di Kec. Teweh Timur Kab. Barito Utara Prov. Kalteng. Ketinggian air 100-250 cm. 770 unit rumah  4 unit masjid terendam.</n:p>
+                     <n:small class="text-muted">8 Menit Lalu</n:small>
+                 </div>
+             </div>
+             <div class="update">
+                 <div class="profile-photo">
+                     <n:img src="/zkau/web/img/profile-5.png"></n:img>
+                 </div>
+                 <div class="message">
+                     <n:p><n:b>KODAM XVIII</n:b> Ditemukan 32 butir munisi senjata pada saat pembersihan menebang pohon disamping pekarangan sekolah SMAN 1. Diamankan di Inteldim-0105/Abar. </n:p>
+                     <n:small class="text-muted">12 Menit Lalu</n:small>
+                 </div>
+             </div>
+         </div>
+	</div>
+	<div class="sales-analytics">
+	    <n:h2>Analisa Keamanan</n:h2>
+	    <div class="item online">
+	        <div class="icon">
+	            <n:span class="material-icons-sharp">photo_camera_front</n:span>
+	        </div>
+	        <div class="right">
+	            <div class="info">
+	                <n:h3>PENGAWASAN ORANG</n:h3>
+	                <n:small class="text-muted">Per Juni 2023</n:small>
+	            </div>
+	            <n:h5 class="primary">+2%</n:h5>
+	            <n:h3>8</n:h3>
+	        </div>
+	    </div>
+	    <div class="item offline">
+	        <div class="icon">
+	            <n:span class="material-icons-sharp">sim_card_alert</n:span>
+	        </div>
+	        <div class="right">
+	            <div class="info">
+	                <n:h3>DAFTAR HITAM</n:h3>
+	                <n:small class="text-muted">Per Juni 2023</n:small>
+	            </div>
+	            <n:h5 class="danger">+0%</n:h5>
+	            <n:h3>0</n:h3>
+	        </div>
+	    </div>
+	    <div class="item customers">
+	        <div class="icon">
+	            <n:span class="material-icons-sharp">macro_off</n:span>
+	        </div>
+	        <div class="right">
+	            <div class="info">
+	                <n:h3>OBYEK TERTINGGAL</n:h3>
+	                <n:small class="text-muted">Per Juni 2023</n:small>
+	            </div>
+	            <n:h5 class="success">+1%</n:h5>
+	            <n:h3>2</n:h3>
+	        </div>
+	    </div>
+	    <div class="item add-product">
+	        <div>
+	            <n:span class="material-icons-sharp">add</n:span>
+	            <n:h3>Analisa Baru</n:h3>
+	        </div>
+	    </div>
+	</div>
+	
+</div>

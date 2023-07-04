@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- basis -->
+
+	<bean id="basisController" class="mil.pusdalops.webui.common.GFCBaseController" abstract="true" scope="prototype">
+	
+	</bean>
+
+	<!-- main -->
+
+	<bean id="mainWindowController" class="mil.pusdalops.webui.window.MainWindowController" scope="prototype" parent="basisController">
+
+	</bean>
+	
+	<bean id="dashboard01Controller" class="mil.pusdalops.webui.window.Dashboard01Controller" scope="prototype" parent="basisController">
+	
+	</bean>
+	
+	<bean id="dashboard02Controller" class="mil.pusdalops.webui.window.Dashboard02Controller" scope="prototype" parent="basisController">
+	
+	</bean>
+	
+	<bean id="dashboard03Controller" class="mil.pusdalops.webui.window.Dashboard03Controller" scope="prototype" parent="basisController">
+	
+	</bean>
+	
+	<bean id="pendaftaranController" class="mil.pusdalops.webui.window.PendaftaranController" scope="prototype" parent="basisController">
+	
+	</bean>
+
+	<bean id="perhitunganController" class="mil.pusdalops.webui.window.PerhitunganController" scope="prototype" parent="basisController">
+	
+	</bean>
+	
+	<bean id="kejadianMenonjolController" class="mil.pusdalops.webui.window.KejadianMenonjolController" scope="prototype" parent="basisController">
+	
+	</bean>
+	
+	<bean id="settingsController" class="mil.pusdalops.webui.window.SettingsController" scope="prototype" parent="basisController">
+	
+	</bean>
+</beans>

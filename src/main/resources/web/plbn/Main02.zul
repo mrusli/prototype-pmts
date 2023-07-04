@@ -1,0 +1,124 @@
+<?page title="Main02" contentType="text/html;charset=UTF-8"?>
+<?variable-resolver class="org.zkoss.zkplus.spring.DelegatingVariableResolver"?>
+<?link rel="stylesheet" type="text/css" href="/zkau/web/css/style-main-02.css"?>
+<!-- MATERIAL ICONS CDN -->
+<?link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet"?>
+<!-- GOOGLE FONTS (POPPINS) -->
+<?link rel="preconnect" href="https://fonts.googleapis.com"?>
+<?link rel="preconnect" href="https://fonts.gostatic.com" crossorigin?>
+<?link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"?>
+<zk>
+<window xmlns:n="native" id="main02Window" border="none" sclass="main02Window" apply="${main02WindowController}">
+	<n:nav>
+		<div class="container">
+			<n:img src="/zkau/web/img02/logo.png" class="logo"></n:img>
+			<div class="search-bar">
+				<n:span class="material-icons-sharp">search</n:span>
+				<n:input type="search" placeholder="Search"></n:input>
+			</div>
+			<div class="profile-area">
+				<div class="theme-btn">
+					<n:span class="material-icons-sharp active">light_mode</n:span>
+					<n:span class="material-icons-sharp">dark_mode</n:span>
+				</div>
+				<div class="profile">
+					<div class="profile-photo">
+						<n:img src="/zkau/web/img02/profile-1.jpg"></n:img>
+					</div>
+					<n:h5>Chu Hua</n:h5>
+					<n:span class="material-icons-sharp">expand_more</n:span>
+				</div>
+				<n:button id="menu-btn">
+					<n:span class="material-icons-sharp">menu</n:span>
+				</n:button>
+			</div>
+		</div>
+	</n:nav>
+	<!-- END OF NAVBAR -->
+	<n:main>
+		<n:aside>
+			<n:button id="close-btn">
+				<n:span class="material-icons-sharp">close</n:span>
+			</n:button>
+			<div class="sidebar">
+				<n:a href="#">
+					<n:span class="material-icons-sharp">dashboard</n:span>
+					<n:h4>Dashboard</n:h4>
+				</n:a>
+			</div>
+			<div class="sidebar">
+				<n:a href="#">
+					<n:span class="material-icons-sharp">currency_exchange</n:span>
+					<n:h4>Exchange</n:h4>
+				</n:a>
+			</div>
+			<div class="sidebar">
+				<n:a href="#">
+					<n:span class="material-icons-sharp">account_balance_wallet</n:span>
+					<n:h4>Wallet</n:h4>
+				</n:a>
+			</div>
+			<div class="sidebar">
+				<n:a href="#">
+					<n:span class="material-icons-sharp">payment</n:span>
+					<n:h4>Transactions</n:h4>
+				</n:a>
+			</div>
+			<div class="sidebar">
+				<n:a href="#">
+					<n:span class="material-icons-sharp">pie_chart</n:span>
+					<n:h4>Analytics</n:h4>
+				</n:a>
+			</div>
+			<div class="sidebar">
+				<n:a href="#">
+					<n:span class="material-icons-sharp">message</n:span>
+					<n:h4>Messages</n:h4>
+				</n:a>
+			</div>
+			<div class="sidebar">
+				<n:a href="#">
+					<n:span class="material-icons-sharp">help_center</n:span>
+					<n:h4>Help Center</n:h4>
+				</n:a>
+			</div>
+			<div class="sidebar">
+				<n:a href="#">
+					<n:span class="material-icons-sharp">settings</n:span>
+					<n:h4>Settings</n:h4>
+				</n:a>
+			</div>
+			<!-- END OF SIDEBAR -->
+			<div class="updates">
+				<n:span class="material-icons-sharp">update</n:span>
+				<n:h4>Updates Available</n:h4>
+				<n:small>Security Updates</n:small>
+				<n:small>General Updates</n:small>
+				<n:small>Update Now</n:small>
+				
+			</div>			
+		</n:aside>
+		<!-- END OF ASIDE -->
+		<n:section class="middle">
+			<div class="header">
+				<n:h1>Overview</n:h1>
+				<n:input type="date"></n:input>
+			</div>
+			<div class="cards">
+				<div class="card">
+					<div class="top">
+						<div class="left">
+						
+						</div>
+					</div>
+				</div>
+			</div>
+		</n:section>
+		<!-- END OF MIDDLE -->
+		<n:section class="right">
+		
+		</n:section>
+		<!-- END OF RIGHT -->
+	</n:main>
+</window>
+</zk>

@@ -1,0 +1,65 @@
+<div xmlns:n="native" id="settingsPanel" apply="${settingsController}">
+<n:main class="settings">
+	<n:h1>Settings</n:h1>
+	<div class="twoColumns">
+		<div class="column01">
+			<div style="padding-top: 10px; display: flex; gap: 10px; align-items: center;">
+				<n:h3>Jumlah Orang Keluar / Masuk PLBN</n:h3>
+				<checkbox mold="switch"></checkbox>
+			</div>
+			<n:p><n:i>Replikasi Data Jumlah Orang Keluar / Masuk ke PUSAT</n:i></n:p>
+			<div style="padding-top: 10px; display: flex; gap: 10px; align-items: center;">
+				<n:h3>Pencatatan Data Keluar / Masuk PLBN</n:h3>
+				<checkbox mold="switch"></checkbox>
+			</div>
+			<n:p><n:i>Replikasi Data Orang Keluar / Masuk ke PUSAT</n:i></n:p>
+			<div style="padding-top: 10px; display: flex; gap: 10px; align-items: center;">
+				<n:h3>Pemantauan Daftar Hitam PLBN</n:h3>
+				<checkbox mold="switch"></checkbox>
+			</div>
+			<n:p><n:i>Replikasi Daftar Hitam ke PUSAT</n:i></n:p>
+			<div style="padding-top: 10px; display: flex; gap: 10px; align-items: center;">
+				<n:h3>Pengiriman Event / Alarm PLBN</n:h3>
+				<checkbox mold="switch"></checkbox>
+			</div>
+			<n:p><n:i>Notifikasi Event / Alarm Langsung ke PUSAT</n:i></n:p>
+			<div style="padding-top: 10px; display: flex; gap: 10px; align-items: center;">
+				<n:h3>Laporan Jumlah Orang (di Area Tertentu)</n:h3>
+				<checkbox mold="switch"></checkbox>
+			</div>
+			<n:p><n:i>Notifikasi Jumlah Orang di Area Tertentu ke PUSAT</n:i></n:p>
+			<div style="padding-top: 10px;">
+				<n:h3>Test Heartbeat</n:h3>
+			</div>
+			<div style="padding-top: 5px;">
+				<textbox rows="10" width="340px" style="resize: none;"></textbox>
+			</div>
+			<div style="padding-top: 5px; display: flex; gap: 10px; align-items: center;">
+				<button label="Test"></button>
+				<button label="Clear"></button>
+			</div>		
+		</div>
+		<div class="column02">
+			<div style="padding-top: 10px; display: flex; gap: 10px; align-items: center;">
+				<n:h3>Auto Kejadian Menonjol dari Deteksi</n:h3>
+				<checkbox mold="switch"></checkbox>
+			</div>
+			<n:p><n:i>Mengijinkan Personel Langsung membuat Kejadian Menonjol</n:i></n:p>
+			<div style="padding-top: 10px; display: flex; gap: 10px; align-items: center;">
+				<n:h3>Menganggap Kejadian Menonjol sebagai Event Notifikasi</n:h3>
+				<checkbox mold="switch"></checkbox>
+			</div>
+			<n:p><n:i>Kejadian Menonjol dianggap sebagai event dan dikirim sebagai notifikasi</n:i></n:p>
+			<div style="padding-top: 10px; display: flex; gap: 10px; align-items: center;">
+				<n:h3>Default Kotamaops PLBN:</n:h3>
+				<textbox width="220px" value="KODAM XII / TANJUNGPURA"></textbox>
+			</div>			
+			<div style="padding-top: 10px; display: flex; gap: 10px; align-items: center;">
+				<n:h3>Default Propinsi PLBN:</n:h3>
+				<textbox width="220px" value="KALIMANTAN BARAT"></textbox>
+			</div>
+		</div>
+	</div>
+	
+</n:main>
+</div>
