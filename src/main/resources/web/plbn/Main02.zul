@@ -1,124 +1,124 @@
-<?page title="Main02" contentType="text/html;charset=UTF-8"?>
+<?page title="Admin" contentType="text/html;charset=UTF-8"?>
+<?page viewport="width=device-width, initial-scale=1.0"?>
 <?variable-resolver class="org.zkoss.zkplus.spring.DelegatingVariableResolver"?>
 <?link rel="stylesheet" type="text/css" href="/zkau/web/css/style-main-02.css"?>
 <!-- MATERIAL ICONS CDN -->
-<?link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet"?>
-<!-- GOOGLE FONTS (POPPINS) -->
-<?link rel="preconnect" href="https://fonts.googleapis.com"?>
-<?link rel="preconnect" href="https://fonts.gostatic.com" crossorigin?>
-<?link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"?>
+<?link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"?>
+<!-- GOOGLE FONTS (Montserrat) -->
+<?link rel="preconnect" href="https://fonts.googleapis.com" ?>
+<?link rel="preconnect" href="https://fonts.gstatic.com" crossorigin ?>
+<?link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" ?>
 <zk>
 <window xmlns:n="native" id="main02Window" border="none" sclass="main02Window" apply="${main02WindowController}">
-	<n:nav>
-		<div class="container">
-			<n:img src="/zkau/web/img02/logo.png" class="logo"></n:img>
-			<div class="search-bar">
-				<n:span class="material-icons-sharp">search</n:span>
-				<n:input type="search" placeholder="Search"></n:input>
+<div class="grid-container">	
+	<!-- Header -->
+	<n:header class="header">
+		<n:div class="menu-icon" onClick="openSidebar()">
+			<n:span class="material-icons-outlined">menu</n:span>
+		</n:div>
+		<div class="header-left">
+			<n:span class="material-icons-outlined">search</n:span>					
+		</div>
+		<div class="header-right">
+			<n:span class="material-icons-outlined">notifications</n:span>		
+			<n:span class="material-icons-outlined">email</n:span>
+			<n:span class="material-icons-outlined">account_circle</n:span>												
+		</div>		
+	</n:header>
+	<!-- Header - End of -->
+	
+	<!-- Sidebar -->
+	<n:aside id="sidebar">
+		<div class="sidebar-title">
+			<div class="sidebar-brand">
+				<n:span class="material-icons-outlined">shopping_cart</n:span> STORE			
 			</div>
-			<div class="profile-area">
-				<div class="theme-btn">
-					<n:span class="material-icons-sharp active">light_mode</n:span>
-					<n:span class="material-icons-sharp">dark_mode</n:span>
+			<n:span class="material-icons-outlined" onClick="closeSidebar()">close</n:span>
+		</div>
+		
+		<n:ul class="sidebar-list">
+			<n:li class="sidebar-list-item">
+				<n:span class="material-icons-outlined">dashboard</n:span> Dashboard
+			</n:li>
+			<n:li class="sidebar-list-item">
+				<n:span class="material-icons-outlined">inventory_2</n:span> Products
+			</n:li>
+			<n:li class="sidebar-list-item">
+				<n:span class="material-icons-outlined">category</n:span> Categories
+			</n:li>
+			<n:li class="sidebar-list-item">
+				<n:span class="material-icons-outlined">groups</n:span> Customers
+			</n:li>
+			<n:li class="sidebar-list-item">
+				<n:span class="material-icons-outlined">fact_check</n:span> Inventory
+			</n:li>
+			<n:li class="sidebar-list-item">
+				<n:span class="material-icons-outlined">poll</n:span> Reports
+			</n:li>
+
+		</n:ul>
+	</n:aside>
+	<!-- Sidebar - End of -->
+	
+	<!-- Main -->
+	<n:main class="main-container">
+		<div class="main-title">
+			<n:h2>DASHBOARD</n:h2>
+		</div>
+		<div class="main-cards">
+			<div class="card">
+				<div class="card-inner">
+					<n:h3>PRODUCTS</n:h3>
+					<n:span class="material-icons-outlined">inventory_2</n:span>
 				</div>
-				<div class="profile">
-					<div class="profile-photo">
-						<n:img src="/zkau/web/img02/profile-1.jpg"></n:img>
-					</div>
-					<n:h5>Chu Hua</n:h5>
-					<n:span class="material-icons-sharp">expand_more</n:span>
+				<n:h1>249</n:h1>				
+			</div>
+
+			<div class="card">
+				<div class="card-inner">
+					<n:h3>CATEGORIES</n:h3>
+					<n:span class="material-icons-outlined">category</n:span>				
 				</div>
-				<n:button id="menu-btn">
-					<n:span class="material-icons-sharp">menu</n:span>
-				</n:button>
+				<n:h1>25</n:h1>
+			</div>
+			
+			<div class="card">
+				<div class="card-inner">
+					<n:h3>CUSTOMERS</n:h3>
+					<n:span class="material-icons-outlined">group</n:span>				
+				</div>
+				<n:h1>1500</n:h1>
+			</div>
+			
+			<div class="card">
+				<div class="card-inner">
+					<n:h3>ALERTS</n:h3>
+					<n:span class="material-icons-outlined">notification_important</n:span>				
+				</div>
+				<n:h1>56</n:h1>						
+			</div>
+
+		</div>
+		
+		<div class="charts">
+			<div class="charts-card">
+				<n:h2 class="chart-title">Top 5 Products</n:h2>
+				<n:div id="bar-chart"></n:div>
+			</div>
+			
+			<div class="charts-card">
+				<n:h2 class="chart-title">Purchase and Sales Orders</n:h2>
+				<n:div id="area-chart"></n:div>
 			</div>
 		</div>
-	</n:nav>
-	<!-- END OF NAVBAR -->
-	<n:main>
-		<n:aside>
-			<n:button id="close-btn">
-				<n:span class="material-icons-sharp">close</n:span>
-			</n:button>
-			<div class="sidebar">
-				<n:a href="#">
-					<n:span class="material-icons-sharp">dashboard</n:span>
-					<n:h4>Dashboard</n:h4>
-				</n:a>
-			</div>
-			<div class="sidebar">
-				<n:a href="#">
-					<n:span class="material-icons-sharp">currency_exchange</n:span>
-					<n:h4>Exchange</n:h4>
-				</n:a>
-			</div>
-			<div class="sidebar">
-				<n:a href="#">
-					<n:span class="material-icons-sharp">account_balance_wallet</n:span>
-					<n:h4>Wallet</n:h4>
-				</n:a>
-			</div>
-			<div class="sidebar">
-				<n:a href="#">
-					<n:span class="material-icons-sharp">payment</n:span>
-					<n:h4>Transactions</n:h4>
-				</n:a>
-			</div>
-			<div class="sidebar">
-				<n:a href="#">
-					<n:span class="material-icons-sharp">pie_chart</n:span>
-					<n:h4>Analytics</n:h4>
-				</n:a>
-			</div>
-			<div class="sidebar">
-				<n:a href="#">
-					<n:span class="material-icons-sharp">message</n:span>
-					<n:h4>Messages</n:h4>
-				</n:a>
-			</div>
-			<div class="sidebar">
-				<n:a href="#">
-					<n:span class="material-icons-sharp">help_center</n:span>
-					<n:h4>Help Center</n:h4>
-				</n:a>
-			</div>
-			<div class="sidebar">
-				<n:a href="#">
-					<n:span class="material-icons-sharp">settings</n:span>
-					<n:h4>Settings</n:h4>
-				</n:a>
-			</div>
-			<!-- END OF SIDEBAR -->
-			<div class="updates">
-				<n:span class="material-icons-sharp">update</n:span>
-				<n:h4>Updates Available</n:h4>
-				<n:small>Security Updates</n:small>
-				<n:small>General Updates</n:small>
-				<n:small>Update Now</n:small>
-				
-			</div>			
-		</n:aside>
-		<!-- END OF ASIDE -->
-		<n:section class="middle">
-			<div class="header">
-				<n:h1>Overview</n:h1>
-				<n:input type="date"></n:input>
-			</div>
-			<div class="cards">
-				<div class="card">
-					<div class="top">
-						<div class="left">
-						
-						</div>
-					</div>
-				</div>
-			</div>
-		</n:section>
-		<!-- END OF MIDDLE -->
-		<n:section class="right">
 		
-		</n:section>
-		<!-- END OF RIGHT -->
 	</n:main>
+	<!-- Main - End of -->
+	
+</div>
 </window>
+<!-- ApexCharts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.41.0/apexcharts.min.js"></script>
+<!-- Custom JS -->
+<script defer="true" type="text/javascript" src="/zkau/web/js/main02.js"></script>
 </zk>
