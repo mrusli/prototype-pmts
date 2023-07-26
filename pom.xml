@@ -11,7 +11,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
-	<groupId>mil.pusdalops.webui</groupId>
+	<groupId>mil.pusdalops.domain</groupId>
 	<artifactId>prototype-pmts</artifactId>
 	<version>1.0.0</version>
 
@@ -37,6 +37,31 @@
 	</properties>
 
 	<dependencies>
+		<!-- domain -->		
+		<!-- https://mvnrepository.com/artifact/org.hibernate.common/hibernate-commons-annotations -->
+		<dependency>
+		    <groupId>org.hibernate.common</groupId>
+		    <artifactId>hibernate-commons-annotations</artifactId>
+		    <version>6.0.5.Final</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+		<dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-core</artifactId>
+		    <version>6.1.6.Final</version>
+			<exclusions>
+		    	<exclusion>
+		    		<groupId>org.hibernate.common</groupId>
+		    		<artifactId>hibernate-commons-annotations</artifactId>
+		    	</exclusion>
+			</exclusions>
+		</dependency>		
+		<!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
+		<dependency>
+		    <groupId>com.mysql</groupId>
+		    <artifactId>mysql-connector-j</artifactId>
+		</dependency>
+				
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
@@ -70,7 +95,11 @@
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>
 		</dependency>
-		
+		<!-- to enable spring security -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>		
         <dependency>
             <groupId>org.zkoss.zkspringboot</groupId>
             <artifactId>zkspringboot-starter</artifactId>
