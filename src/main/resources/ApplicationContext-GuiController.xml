@@ -4,6 +4,8 @@
     xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+	<import resource="CommonContext-Dao.xml"/>
+
 	<!-- basis -->
 
 	<bean id="basisController" class="mil.pusdalops.webui.common.GFCBaseController" abstract="true" scope="prototype">
